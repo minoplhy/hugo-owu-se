@@ -1,0 +1,24 @@
+{{- /* Special CSS */}}
+{{- $specials_css := (resources.Get "css/specials.css") | resources.Minify }}
+{{- if not site.Params.assets.disableFingerprinting }}
+{{- $specials_css := $specials_css | fingerprint }}
+    <link crossorigin="anonymous" href="{{ $specials_css.RelPermalink }}" integrity="{{ $specials_css.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{ else }}
+    <link crossorigin="anonymous" href="{{ $specials_css.RelPermalink }}" rel="preload stylesheet" as="style">
+{{ end }}
+
+
+{{ if (.Eq (site.GetPage "/")) }}
+    {{- $image_random := (resources.Get "js/image-randomize.js") | resources.Minify }}
+    {{- $image_array := (resources.Get "js/image-array.js") | resources.Minify }}
+
+    {{- if not site.Params.assets.disableFingerprinting }}
+        {{- $image_random := $image_random | fingerprint }}
+        {{- $image_array := $image_array | fingerprint }}
+        <script async crossorigin="anonymous" src="{{ $image_array.RelPermalink }}" integrity="{{ $image_array.Data.Integrity }}"></script>
+        <script defer crossorigin="anonymous" src="{{ $image_random.RelPermalink }}" integrity="{{ $image_random.Data.Integrity }}"></script>
+    {{ else }}
+        <script async crossorigin="anonymous" src="{{ $image_array.RelPermalink }}"></script>
+        <script defer crossorigin="anonymous" src="{{ $image_random.RelPermalink }}"></script>
+    {{ end }}
+{{ end }}

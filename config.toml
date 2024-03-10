@@ -1,6 +1,6 @@
 baseURL = 'https://owu.se'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = "Cozy Camp owu.se Mountain（´∀｀）"
 theme = 'hugo-bearblog'
 
 # Generate a nice robots.txt for SEO
@@ -14,7 +14,7 @@ ignoreErrors = ["error-disable-taxonomy"]
 
 [params]
   # The "description" of your website. This is used in the meta data of your generated html.
-  description = "Hugo + Bear = :heart:"
+  description = "With ♥️ from An indoor enthusiast"
 
   # The path to your "favicon". This should be a square (at least 32px x 32px) png-file.
   # Hint: It's good practise to also put a "favicon.ico"-file into your "static"-folder.
@@ -24,12 +24,12 @@ ignoreErrors = ["error-disable-taxonomy"]
   # services like Twitter or Slack want to generate a preview of a link to your site.
   # See https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph.
-  images = ["images/share.png"]
+  images = ["images/favicon.png"]
 
   # Another "title" :-). This one is used as the site_name on the Hugo's internal
   # opengraph structured data template.
   # See https://ogp.me/ and https://gohugo.io/templates/internal#open-graph.
-  title = "Hugo ʕ•ᴥ•ʔ Bear"
+  title = "Cozy Camp owu.se Mountain（´∀｀）"
 
   # This theme will, by default, inject a made-with-line at the bottom of the page.
   # You can turn it off, but we would really appreciate if you don’t :-).
@@ -41,3 +41,8 @@ ignoreErrors = ["error-disable-taxonomy"]
   # for details. An example TOML config that uses [ISO
   # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
   # dateFormat = "2006-01-02"
+
+ 	# based on solutions by papermod : https://github.com/adityatelange/hugo-PaperMod/issues/89
+	# disable integrity on script,stylesheet linking
+	[params.assets]
+	#  disableFingerprinting = true
