@@ -1,6 +1,7 @@
 +++
 title =  "Crappy's v4(or 3?) a new Project in a while"
 date =   2022-09-19T12:00:00+00:00
+slug = "v4-crappy"
 
 tags = ["blog",]
 +++

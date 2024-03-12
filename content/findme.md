@@ -25,4 +25,7 @@ PGP Key -> `923DFF2B99B75D731C55BF7490667A59A9908AEC`
 <pre>
 <a href="/assets/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a>
 </pre>
+<br>
 {{< /rawhtml >}}
+
+##### on : [GitHub](https://github.com/minoplhy), [owu.se/p-p](https://owu.se/p-p/explore/repos), [Framagit](https://framagit.org/meeillo), [Codeberg](https://codeberg.org/DoulpaGllo)

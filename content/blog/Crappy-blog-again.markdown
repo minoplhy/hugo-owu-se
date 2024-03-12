@@ -2,6 +2,7 @@
 title =  "Crappy's Blog but this is Jekyll"
 date =   2021-06-07T12:00:00+00:00
 lastmod = 2024-03-09T06:43:04+00:00
+slug = "Crappy-blog-again"
 
 tags = ["blog",]
 +++

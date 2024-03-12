@@ -2,3 +2,24 @@
     text-decoration: none;
     color:rgb(214, 124, 40);
 }
+
+.image-auto-border {
+    border: 5px dashed #3ffcc0;
+}
+
+.image-resize-contain {
+    object-fit: contain;
+    aspect-ratio: 2/1;
+    width: 125%;
+}
+
+.image-resize-fill {
+    width: 55%;
+    height: 50%;
+    aspect-ratio: 1;
+    object-fit: fill;
+}
+
+.hide-display {
+    display: none;
+}

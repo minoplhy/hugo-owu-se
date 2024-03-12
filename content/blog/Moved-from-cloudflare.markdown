@@ -2,6 +2,7 @@
 title =  "Crappy's Blog but moved from Cloudflare"
 date =   2021-12-25T12:00:00+00:00
 lastmod = 2022-02-12T12:00:00+00:00
+slug = "Moved-from-cloudflare"
 
 tags = ["blog",]
 +++

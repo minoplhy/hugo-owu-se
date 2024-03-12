@@ -1,6 +1,7 @@
 +++
 title =  "Transition: new year, new domain, new Jekyll site, new servers, and 15.99 for gtld"
 date =   2023-06-09T12:00:00+00:00
+slug = "big-migration-2023"
 
 tags = ["blog",]
 +++
