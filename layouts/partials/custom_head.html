@@ -11,3 +11,12 @@
         <script async crossorigin="anonymous" src="{{ $randomize_combined.RelPermalink }}"></script>
     {{ end }}
 {{ end }}
+
+{{- /* specials CSS stylesheet */}}
+{{- $special_stylesheet := (resources.Get "css/specials.css") | resources.Minify }}
+{{- if not site.Params.assets.disableFingerprinting }}
+  {{- $special_stylesheet := $special_stylesheet | fingerprint }}
+  <link crossorigin="anonymous" href="{{ $special_stylesheet.RelPermalink }}" integrity="{{ $special_stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{ else }}
+  <link crossorigin="anonymous" href="{{ $special_stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{ end }}

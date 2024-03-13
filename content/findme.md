@@ -15,7 +15,7 @@ E-Mail -> c [at] 3qx.nl
 PGP Key -> `21D18F8C0BE428F50A3380BB41D406044E2434BF`
 {{< rawhtml >}}
 <pre>
-<a href="/assets/misc/c_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/21D18F8C0BE428F50A3380BB41D406044E2434BF">openpgp</a>
+<a href="/misc/c_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/21D18F8C0BE428F50A3380BB41D406044E2434BF">openpgp</a>
 </pre>
 {{< /rawhtml >}}
 
@@ -23,7 +23,7 @@ PGP Key -> `923DFF2B99B75D731C55BF7490667A59A9908AEC`
 
 {{< rawhtml >}}
 <pre>
-<a href="/assets/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a>
+<a href="/misc/hej_pgp.txt">Here</a>, <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/923DFF2B99B75D731C55BF7490667A59A9908AEC">openpgp</a>
 </pre>
 <br>
 {{< /rawhtml >}}
