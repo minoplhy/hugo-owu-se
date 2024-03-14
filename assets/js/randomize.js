@@ -1,16 +1,16 @@
 function randomImageBroker(ElemName, imgArray) {
   const imgELM = document.getElementById(ElemName);
-  const randomIndex = mathRandom(imgELM, imgArray);
+  const randomIndex = mathRandom(imgArray);
   imgELM.src = imgArray[randomIndex];
 }
 
 function randomTextBroker(ElemName, textArray) {
   const textElm = document.getElementById(ElemName);
-  const randomIndex = mathRandom(textElm, textArray);
+  const randomIndex = mathRandom(textArray);
   textElm.innerHTML = textArray[randomIndex]
 }
 
-function mathRandom(imgELM, srcArray) {
+function mathRandom(srcArray) {
   return Math.floor(Math.random()*srcArray.length);
 }
 
