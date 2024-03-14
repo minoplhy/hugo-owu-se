@@ -3,6 +3,8 @@ title = "Where to find me?"
 date = 2024-03-10T14:16:32+00:00
 
 slug = "findme"
+
+description = "some Information about myself, I guess? ヽ༼ຈل͜ຈ༽ﾉ "
 +++
 
 
