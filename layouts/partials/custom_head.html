@@ -6,9 +6,9 @@
 
     {{- if not site.Params.assets.disableFingerprinting }}
         {{- $randomize_combined := $randomize_combined | fingerprint }}
-        <script async crossorigin="anonymous" src="{{ $randomize_combined.RelPermalink }}" integrity="{{ $randomize_combined.Data.Integrity }}"></script>
+        <script defer crossorigin="anonymous" src="{{ $randomize_combined.RelPermalink }}" integrity="{{ $randomize_combined.Data.Integrity }}"></script>
     {{ else }}
-        <script async crossorigin="anonymous" src="{{ $randomize_combined.RelPermalink }}"></script>
+        <script defer crossorigin="anonymous" src="{{ $randomize_combined.RelPermalink }}"></script>
     {{ end }}
 {{ end }}
 
