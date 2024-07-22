@@ -60,7 +60,7 @@ by editing `/etc/docker/daemon.json` to disable it by:
 {
   "iptables" : false 
 }
-````
+```
 I've tried this method and sadly doesn't work. also, [Docker Docs](https://docs.docker.com/network/packet-filtering-firewalls/#prevent-docker-from-manipulating-iptables) Recommend against this method quote `"It is likely to break container networking for the Docker Engine"`
 
 ### 2. Next up, "[User-defined networks](https://docs.docker.com/network/#user-defined-networks)".
