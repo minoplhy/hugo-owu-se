@@ -23,3 +23,21 @@
 .hide-display {
     display: none;
 }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #f4b7b7;
+}
+
+.dark-mode tr:nth-child(even) {
+    background-color: #340b0b;
+}
