@@ -18,6 +18,8 @@ images = ["/images/blog/fuck-you-accept-ra/banner.avif"]
 tags = ["blog","opinion","rant",]
 +++
 
+*EDIT: 11 Jan, 2025 - fix sober grammar*
+
 Hello internet,
 
 I decided to write this as a first blog of 2025(HNY🎉) because i spent last fucking week, figuring out what happens with IPv6 on one of my VPS. I don't know if i should call this an **edge**-case or not, because i never have problems like this with any of my vps before, I'll tell you more...

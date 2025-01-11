@@ -15,6 +15,8 @@ description = "Ranting about Gitea, Forgejo and open-source enviroment recently.
 tags = ["blog","opinion","rant",]
 +++
 
+*EDIT: 11 Jan, 2025 - add rant tag*
+
 ***Note: This is rant***
 
 ## The beginnings
