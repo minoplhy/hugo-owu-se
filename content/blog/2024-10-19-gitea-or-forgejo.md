@@ -5,14 +5,14 @@ slug = "gitea-and-forgejo"
 #
 # lastmod is optional
 #
-# lastmod = "Timestamp that you edit this blog"
+lastmod = "2025-01-11T20:10:37+07:00"
 
 #
 # description is optional
 #
 description = "Ranting about Gitea, Forgejo and open-source enviroment recently."
 
-tags = ["blog","opinion",]
+tags = ["blog","opinion","rant",]
 +++
 
 ***Note: This is rant***

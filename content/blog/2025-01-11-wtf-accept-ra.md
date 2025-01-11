@@ -20,7 +20,7 @@ tags = ["blog","opinion","rant",]
 
 Hello internet,
 
-I decided to write this as a first blog of 2025(HNY🎉) because i spent last fucking week, figuring out what happens with IPv6 on one of my VPS. I don't know if i should call this an **edge**-case or not, because i never have problems like this with any one of vps before, I'll tell you more...
+I decided to write this as a first blog of 2025(HNY🎉) because i spent last fucking week, figuring out what happens with IPv6 on one of my VPS. I don't know if i should call this an **edge**-case or not, because i never have problems like this with any of my vps before, I'll tell you more...
 
 **TLDR; FUCK YOU accept_ra!**
 
