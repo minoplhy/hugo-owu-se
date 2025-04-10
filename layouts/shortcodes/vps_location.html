@@ -32,10 +32,10 @@
 
 <h3>Location</h3>
 {{ range $location }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+    <pre> <b>{{ .type }}:</b> {{ .value | safeHTML }}</pre>
 {{ end }}
 
 <h3>Owner</h3>
 {{ range $owner }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+    <pre> <b>{{ .type }}:</b> {{ .value |safeHTML }}</pre>
 {{ end }}
