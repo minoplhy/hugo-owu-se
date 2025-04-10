@@ -49,7 +49,8 @@ disk_total="25G"
 AS24875 'NovoServe B.V.'
 {{< /network_upstream >}}
 
-{{< spoil_lscpu >}}
+{{< spoil_group title="lscpu">}}
+{{< spoil_subgroup date="2025-04-09" >}}
 Architecture:             x86_64
   CPU op-mode(s):         32-bit, 64-bit
   Address sizes:          48 bits physical, 48 bits virtual
@@ -100,9 +101,11 @@ Vulnerabilities:
   Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
   Srbds:                  Not affected
   Tsx async abort:        Not affected
-{{< /spoil_lscpu >}}
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
 
-{{< spoil_yabs >}}
+{{< spoil_group title="yabs">}}
+{{< spoil_subgroup date="2025-04-09" >}}
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
 #              Yet-Another-Bench-Script              #
 #                     v2025-01-01                    #
@@ -188,9 +191,11 @@ Multi Core      | 1475
 Full Test       | https://browser.geekbench.com/v6/cpu/11448490
 
 YABS completed in 17 min 4 sec
-{{< /spoil_yabs >}}
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
 
-{{< spoil_nws >}}
+{{< spoil_group title="nws">}}
+{{< spoil_subgroup date="2025-04-09" >}}
 ---------------------------------- nws.sh ---------------------------------
       A simple script to bench network performance using speedtest-cli     
 ---------------------------------------------------------------------------
@@ -282,4 +287,81 @@ YABS completed in 17 min 4 sec
 ---------------------------------------------------------------------------
  Result             : https://result.nws.sh/r/1744266102_0WVKBR_GLOBAL.txt
 ---------------------------------------------------------------------------
-{{< /spoil_nws >}}
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
+
+{{< spoil_group title="benchmonster">}}
+{{< spoil_subgroup date="2025-04-10" >}}
+---------------------------------------------------------------------------
+ Region: Global  https://bench.monster v1.7.4 2023-12-15 
+ Usage : curl -sL bench.monster | bash -s -- -Global
+---------------------------------------------------------------------------
+ OS           : Debian GNU/Linux 12 (64 Bit)
+ Virt/Kernel  : KVM / 6.1.0-30-amd64
+ CPU Model    : AMD EPYC 7763 64-Core Processor
+ CPU Cores    : 1 @ 2445.406 MHz x86_64 512 KB Cache
+ CPU Flags    : AES-NI Enabled & VM-x/AMD-V Enabled
+ Load Average : 0.07, 0.02, 0.00
+ Total Space  : 25G (6.6G ~27% used)
+ Total RAM    : 1932 MB (291 MB + 232 MB Buff in use)
+ Total SWAP   : 4095 MB (5 MB in use)
+ IPv4/IPv6    : ✔ Online / ✔ Online
+ Uptime       : 46 days 18:39
+---------------------------------------------------------------------------
+ Location     : The Netherlands, Amsterdam (North Holland)
+ ASN & ISP    : AS202602, 365 Online Technology Joint Stock Company / 365 Group LLC
+---------------------------------------------------------------------------
+
+ ## Geekbench v5 CPU Benchmark:
+
+  Single Core : 1089  (EXCELLENT)
+   Multi Core : 1136
+
+ ## IO Test
+
+ CPU Speed:
+    bzip2     : 132 MB/s
+   sha256     : 240 MB/s
+   md5sum     : 499 MB/s
+
+ RAM Speed:
+   Avg. write : 2355.2 MB/s
+   Avg. read  : 6314.7 MB/s
+
+ Disk Speed:
+   1st run    : 1.3 GB/s
+   2nd run    : 1.4 GB/s
+   3rd run    : 1.3 GB/s
+   -----------------------
+   Average    : 1365.3 MB/s
+
+ ## Global Speedtest.net
+
+ Location                       Upload           Download         Ping   
+---------------------------------------------------------------------------
+ Nearby                         5282.44 Mbit/s   6703.82 Mbit/s   3.256 ms
+---------------------------------------------------------------------------
+ USA, New York (Starry)         214.23 Mbit/s    660.87 Mbit/s   82.656 ms
+ USA, Chicago (Windstream)      186.04 Mbit/s    503.76 Mbit/s   100.772 ms
+ USA, Houston (Comcast)         125.18 Mbit/s    403.54 Mbit/s   124.473 ms
+ USA, Los Angeles (Windstream)  97.61 Mbit/s     95.13 Mbit/s    158.345 ms
+ UK, London (toob Ltd)          1196.71 Mbit/s   530.63 Mbit/s   11.192 ms
+ Germany, Berlin (DNS:NET)      844.01 Mbit/s    2355.77 Mbit/s  22.894 ms
+ Spain, Madrid (MasMovil)       531.62 Mbit/s    1122.99 Mbit/s  30.632 ms
+ Italy, Rome (Unidata)          653.40 Mbit/s    641.55 Mbit/s   26.975 ms
+ India, Mumbai (Tatasky)        150.50 Mbit/s    435.12 Mbit/s   121.823 ms
+ Singapore (StarHub)            119.13 Mbit/s    254.94 Mbit/s   158.136 ms
+ Japan, Tsukuba (SoftEther)     33.13 Mbit/s     26.88 Mbit/s    241.804 ms
+ Australia, Sydney (Optus)      20.21 Mbit/s     54.17 Mbit/s    292.635 ms
+ RSA, Randburg (Cool Ideas)     52.18 Mbit/s     171.45 Mbit/s   162.524 ms
+---------------------------------------------------------------------------
+
+ Finished in : 11 min 24 sec
+ Timestamp   : 2025-04-10 12:45:40 GMT
+ Saved in    : /root/speedtest.log
+
+ Share results:
+ - https://www.speedtest.net/result/17597662471.png
+ - https://browser.geekbench.com/v5/cpu/23464860
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
