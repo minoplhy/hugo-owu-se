@@ -15,6 +15,8 @@
     (dict "type" "Traffic Limit" "value" (print $TRAFFIC_LIMIT " " $TRAFFIC_TYPE " " $TRAFFIC_SPEED))
 }}
 
+<h2>Provider Information</h2>
+
 <h3>Specs</h3>
 {{ range $specs }}
     <pre> <b>{{ .type }}:</b> {{ .value }}</pre>

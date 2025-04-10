@@ -3,6 +3,8 @@ title = "Shockhosting SG 1C/2G/30G/2T"
 date = 2025-04-09T21:45:09+00:00
 slug = "shockhosting-1"
 
+lastmod = 2025-04-10T08:00:00+00:00
+
 description = "The VPS Benchmark of Shockhosting SSD-KVM-2GB in Singapore, SG"
 type = "blog"
 +++
@@ -44,6 +46,59 @@ disk_total="29G"
 {{< network_upstream >}}
 AS136557 'Host Universal Pty Ltd'
 {{< /network_upstream >}}
+
+{{< spoil_lscpu >}}
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          48 bits physical, 57 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   1
+  On-line CPU(s) list:    0
+Vendor ID:                AuthenticAMD
+  BIOS Vendor ID:         Red Hat
+  Model name:             AMD EPYC 9354 32-Core Processor
+    BIOS Model name:      RHEL 7.6.0 PC (i440FX + PIIX, 1996)  CPU @ 2.0GHz
+    BIOS CPU family:      1
+    CPU family:           25
+    Model:                17
+    Thread(s) per core:   1
+    Core(s) per socket:   1
+    Socket(s):            1
+    Stepping:             1
+    BogoMIPS:             6490.24
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid tsc_
+                          known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy svm cr8_legacy abm sse4a 
+                          misalignsse 3dnowprefetch osvw perfctr_core invpcid_single ssbd ibrs ibpb stibp vmmcall fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid avx512f avx512dq rdseed adx smap avx51
+                          2ifma clflushopt clwb avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves avx512_bf16 clzero xsaveerptr wbnoinvd arat npt lbrv nrip_save tsc_scale vmcb_clean pausefil
+                          ter pfthreshold v_vmsave_vmload avx512vbmi umip pku ospke avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg avx512_vpopcntdq la57 rdpid fsrm flush_l1d arch_capabilities
+Virtualization features:  
+  Virtualization:         AMD-V
+  Hypervisor vendor:      KVM
+  Virtualization type:    full
+Caches (sum of all):      
+  L1d:                    64 KiB (1 instance)
+  L1i:                    64 KiB (1 instance)
+  L2:                     512 KiB (1 instance)
+  L3:                     16 MiB (1 instance)
+NUMA:                     
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0
+Vulnerabilities:          
+  Gather data sampling:   Not affected
+  Itlb multihit:          Not affected
+  L1tf:                   Not affected
+  Mds:                    Not affected
+  Meltdown:               Not affected
+  Mmio stale data:        Not affected
+  Reg file data sampling: Not affected
+  Retbleed:               Not affected
+  Spec rstack overflow:   Mitigation; safe RET
+  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+  Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+  Srbds:                  Not affected
+  Tsx async abort:        Not affected
+{{< /spoil_lscpu >}}
 
 {{< spoil_yabs >}}
 # ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
