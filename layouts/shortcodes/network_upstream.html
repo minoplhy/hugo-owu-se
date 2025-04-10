@@ -1,0 +1,21 @@
+{{- /*
+    For use with 7
+    */}}
+
+<h3>Network Upstream</h3>
+
+<details class="spoiler">
+    <summary>Click to show</summary>
+    <div class="spoiler-content">
+        <pre>*WARNING: only incoming upstream is count!* <a target="_blank" href=https://bgp.tools/kb/what-is-a-upstream>see</a></a></pre>
+        {{ range (split (string .Inner) "\n") }}
+        {{ $line := trim . " \t\r\n" }}
+        {{ if ne $line "" }}
+          {{ $asn := index (split $line " ") 0 }}
+          {{ $name := trim (replace $line $asn "" 1) " '" }}
+          {{ $asnNum := replace $asn "AS" "" }}
+            <pre><a target="_blank" href="https://bgp.tools/as/{{ $asnNum }}">{{ $asn }}</a> '{{ $name }}'</pre>
+        {{ end }}
+      {{ end }}
+    </div>
+</details>

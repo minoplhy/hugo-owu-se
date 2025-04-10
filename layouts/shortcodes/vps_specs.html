@@ -1,0 +1,21 @@
+{{- /* Get Provider Specs Arguments. */}}
+{{- $CPU_MODEL := or (.Get "cpu_model") "N/a" }}
+{{- $CPU_CORE := or (.Get "cpu_core") "N/a" }}
+{{- $RAM_TOTAL := or (.Get "ram_total") "N/a" }}
+{{- $STORAGE_TOTAL := or (.Get "storage_total") "N/a" }}
+{{- $TRAFFIC_LIMIT := or (.Get "traffic_limit") "N/a" }}
+{{- $TRAFFIC_TYPE := or (.Get "traffic_type") "" }}
+{{- $TRAFFIC_SPEED := or (.Get "traffic_speed") "" }}
+
+{{ $specs := slice
+    (dict "type" "CPU Model" "value" $CPU_MODEL)
+    (dict "type" "Cores" "value" $CPU_CORE)
+    (dict "type" "RAM" "value" $RAM_TOTAL)
+    (dict "type" "Storage" "value" $STORAGE_TOTAL)
+    (dict "type" "Traffic Limit" "value" (print $TRAFFIC_LIMIT " " $TRAFFIC_TYPE " " $TRAFFIC_SPEED))
+}}
+
+<h3>Specs</h3>
+{{ range $specs }}
+    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+{{ end }}

@@ -1,0 +1,52 @@
+{{- /*
+    For use with 7
+    */}}
+
+{{- /* Get CPU Arguments. */}}
+{{- $CPU := or (.Get "cpu") "N/a" }}
+{{- $AESNI := or (.Get "aesni") "N/a" }}
+{{- $VIRT := or (.Get "virt") "N/a" }}
+{{- $HYPERVISOR := or (.Get "hypervisor") "N/a" }}
+
+{{- /* Get Memory Arguments. */}}
+{{- $MEMORY_TOTAL := or (.Get "memory_total") "N/a" }}
+{{- $MEMORY_READ := or (.Get "memory_read") "N/a" }}
+{{- $MEMORY_WRITE := or (.Get "memory_write") "N/a" }}
+
+{{- /* Get DISK Arguments. */}}
+{{- $DISK_TOTAL := or (.Get "disk_total") "N/a" }}
+
+
+
+{{ $cpu := slice
+    (dict "type" "CPU" "value" $CPU)
+    (dict "type" "AES-NI" "value" $AESNI)
+    (dict "type" "Virtualization" "value" $VIRT)
+    (dict "type" "Hypervisor" "value" $HYPERVISOR)
+}}
+
+{{ $ram := slice
+    (dict "type" "Memory Total" "value" $MEMORY_TOTAL)
+    (dict "type" "Memory Read" "value" $MEMORY_READ)
+    (dict "type" "Memory Write" "value" $MEMORY_WRITE)
+}}
+
+{{ $storage := slice
+    (dict "type" "Disk Total" "value" $DISK_TOTAL)
+}}
+
+
+<h3>CPU</h3>
+{{ range $cpu }}
+    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+{{ end }}
+
+<h3>RAM</h3>
+{{ range $ram }}
+    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+{{ end }}
+
+<h3>STORAGE</h3>
+{{ range $storage }}
+    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
+{{ end }}
