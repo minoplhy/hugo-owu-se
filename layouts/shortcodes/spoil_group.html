@@ -18,6 +18,10 @@
   {{ $HEADER = "<h3>Bench.Monster <code>-all</code></h3>" }}
 {{ end }}
 
+{{ if eq $TITLE "goecs" }}
+  {{ $HEADER = "<h3>Fusion Monster Evaluation Project(<a href=https://github.com/oneclickvirt/ecs>ECS Go version</a>)</h3>" }}
+{{ end }}
+
 <h3>{{ $HEADER | safeHTML }}</h3>
 
 {{/*

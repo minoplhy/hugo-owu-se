@@ -3,6 +3,8 @@ title = "GreenCloudVPS DE 1C/2G/25G/3T"
 date = 2025-04-11T06:52:30+00:00
 slug = "greencloudvps-2"
 
+lastmod = 2025-04-12T08:00:00+00:00
+
 description = "The VPS Benchmark of GreenCloudVPS EPYCDEVF-1 in Frankfurt, DE"
 type = "blog"
 +++
@@ -352,5 +354,121 @@ YABS completed in 18 min 3 sec
 
  - https://www.speedtest.net/result/17601333427.png
  - https://browser.geekbench.com/v5/cpu/23467448
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
+
+{{< spoil_group title="goecs">}}
+{{< spoil_subgroup date="2025-04-12" >}}
+-----------------------------VPS Fusion Monster Test------------------------------
+Version: v0.1.29
+Review Channel: https://t.me/vps_reviews
+Go Project: https://github.com/oneclickvirt/ecs
+Shell Project: https://github.com/spiritLHLS/ecs
+-----------------------------System-Basic-Information-----------------------------
+ CPU Model           : AMD EPYC 7763 64-Core Processor @2445.406 MHz
+ CPU Cores           : 1 Virtual CPU(s)
+ CPU Cache           : L1: 64 KB / L2: 512 KB / L3: 256 MB
+ AES-NI              : ✔️ Enabled
+ VM-x/AMD-V/Hyper-V  : ✔️ Enabled
+ RAM                 : 568.53 MB / 1.89 GB
+ Virtio Balloon      : ✔️ Enabled
+ KSM                 : ❌ Undetected
+ Swap                : 32.42 MB / 4.00 GB
+ Disk                : 10.81 GB / 24.82 GB
+ Boot Path           : /dev/vda3
+ OS Release          : debian 12.10 [x86_64] 
+ Kernel              : 6.1.0-31-amd64
+ Uptime              : 36 days, 01 hours, 43 minutes
+ Current Time Zone   : BST
+ Load                : 0.13 / 0.07 / 0.02
+ VM Type             : KVM
+ NAT Type            : Port Restricted Cone
+ Tcp Accelerate      : cubic
+ IPV4 ASN            : AS3214 Xtom GmbH
+ IPV4 Location       : Frankfurt / Hessen / Germany
+ IPV4 Active IPs     : 225/256 (subnet /24)
+ IPV6 ASN            : AS3214 Xtom GmbH
+ IPV6 Location       : Frankfurt / Hessen / Germany
+ IPv6 Mask           : /64
+----------------------------CPU-Test--sysbench-Method-----------------------------
+1 Thread(s) Test:   3542.55
+---------------------------Memory-Test--sysbench-Method---------------------------
+Single Seq Write Speed: 24140.81 MB/s(25.31K IOPS, 5s)
+Single Seq Read  Speed: 41658.60 MB/s(43.68K IOPS, 5s)
+------------------------------Disk-Test--fio-Method-------------------------------
+Test Path     Block    Read(IOPS)              Write(IOPS)             Total(IOPS)
+/root         4k       160.56 MB/s(40.1k)      160.99 MB/s(40.2k)      321.55 MB/s(80.4k)      
+/root         64k      2.02 GB/s(31.6k)        2.04 GB/s(31.8k)        4.06 GB/s(63.4k)        
+/root         512k     9.20 GB/s(18.0k)        9.69 GB/s(18.9k)        18.89 GB/s(36.9k)       
+/root         1m       9.66 GB/s(9438)         10.31 GB/s(10.1k)       19.97 GB/s(19.5k)       
+-----------------------Cross-Border-Streaming-Media-Unlock------------------------
+IPV4:
+===============[ Global ]===============
+Apple                     YES (Region: DEU)
+BingSearch                YES (Region: DE)
+Claude                    YES
+Dazn                      Banned
+Disney+                   NO (forbidden-location)
+Gemini                    NO
+GoogleSearch              YES
+Google Play Store         YES (Region: DE)
+IQiYi                     YES (Region: DE)
+Instagram Licensed Audio  YES
+KOCOWA                    YES
+MetaAI                    NO (AbraGeoBlocked)
+Netflix                   YES (Region: US)
+Netflix CDN               DE
+OneTrust                  YES (Region: DE HESSE)
+ChatGPT                   YES (Region: DE)
+Paramount+                YES
+Amazon Prime Video        YES (Region: DE)
+Reddit                    NO
+SonyLiv                   YES (Region: DE)
+Sora                      YES (Region: DE)
+Spotify Registration      NO
+Steam Store               YES (Community Available) (Region: DE)
+TVBAnywhere+              YES (Region: DE)
+TikTok                    YES (Region: DE)
+Viu.com                   YES
+Wikipedia Editability     NO
+YouTube Region            YES (Region: DE)
+YouTube CDN               FRA
+---------------------------------Email-Port-Check---------------------------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔    
+QQ        ✔     ✔     ✔     ✘     ✔     ✘    
+163       ✔     ✔     ✔     ✘     ✔     ✘    
+Sohu      ✔     ✔     ✔     ✘     ✔     ✘    
+Yandex    ✔     ✔     ✔     ✘     ✔     ✘    
+Gmail     ✔     ✔     ✘     ✘     ✘     ✘    
+Outlook   ✔     ✘     ✔     ✘     ✔     ✘    
+Office365 ✔     ✘     ✔     ✘     ✔     ✘    
+Yahoo     ✔     ✔     ✘     ✘     ✘     ✘    
+MailCOM   ✔     ✔     ✔     ✘     ✔     ✘    
+MailRU    ✔     ✔     ✘     ✘     ✔     ✘    
+AOL       ✔     ✔     ✘     ✘     ✘     ✘    
+GMX       ✔     ✘     ✔     ✘     ✔     ✘    
+Sina      ✔     ✔     ✔     ✘     ✔     ✘    
+Apple     ✘     ✘     ✘     ✘     ✘     ✘    
+FastMail  ✘     ✔     ✘     ✘     ✘     ✘    
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘    
+MXRoute   ✔     ✘     ✔     ✘     ✔     ✘    
+Namecrane ✔     ✔     ✔     ✘     ✔     ✘    
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘    
+ZohoMail  ✘     ✔     ✘     ✘     ✘     ✘    
+Inbox_eu  ✔     ✔     ✔     ✘     ✘     ✘    
+Free_fr   ✘     ✔     ✔     ✘     ✔     ✘    
+------------------------------------Speed-Test------------------------------------
+Location        Upload Speed    Download Speed  Latency         PacketLoss      
+Speedtest.net   1811.71 Mbps    6868.10 Mbps    1.092503ms      N/A             
+Frankfurt       742.73 Mbps     833.36 Mbps     1.672776ms      N/A             
+LosAngeles      75.03 Mbps      226.56 Mbps     154.08218ms     N/A             
+HongKong        56.81 Mbps      184.15 Mbps     191.930215ms    N/A             
+Tokyo,Japan     41.10 Mbps      174.84 Mbps     275.319215ms    N/A             
+Singapore       38.50 Mbps      74.99 Mbps      288.111398ms    N/A             
+----------------------------------------------------------------------------------
+Cost    Time          : 4 min 37 sec
+Current Time          : Sat Apr 12 10:28:36 BST 2025
+----------------------------------------------------------------------------------
 {{< /spoil_subgroup >}}
 {{< /spoil_group >}}

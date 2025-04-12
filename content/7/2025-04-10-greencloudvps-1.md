@@ -3,7 +3,7 @@ title = "GreenCloudVPS NL 1C/2G/25G/3T"
 date = 2025-04-09T12:52:30+00:00
 slug = "greencloudvps-1"
 
-lastmod = 2025-04-10T08:00:00+00:00
+lastmod = 2025-04-12T08:00:00+00:00
 
 description = "The VPS Benchmark of GreenCloudVPS EPYCNL-1 in AMS, NL"
 type = "blog"
@@ -363,5 +363,121 @@ YABS completed in 17 min 4 sec
  Share results:
  - https://www.speedtest.net/result/17597662471.png
  - https://browser.geekbench.com/v5/cpu/23464860
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
+
+{{< spoil_group title="goecs">}}
+{{< spoil_subgroup date="2025-04-12" >}}
+-----------------------------VPS Fusion Monster Test------------------------------
+Version: v0.1.29
+Review Channel: https://t.me/vps_reviews
+Go Project: https://github.com/oneclickvirt/ecs
+Shell Project: https://github.com/spiritLHLS/ecs
+-----------------------------System-Basic-Information-----------------------------
+ CPU Model           : AMD EPYC 7763 64-Core Processor @2445.406 MHz
+ CPU Cores           : 1 Virtual CPU(s)
+ CPU Cache           : L1: 64 KB / L2: 512 KB / L3: 256 MB
+ AES-NI              : ✔️ Enabled
+ VM-x/AMD-V/Hyper-V  : ✔️ Enabled
+ RAM                 : 350.41 MB / 1.89 GB
+ Virtio Balloon      : ✔️ Enabled
+ KSM                 : ❌ Undetected
+ Swap                : 3.73 MB / 4.00 GB
+ Disk                : 7.21 GB / 24.82 GB
+ Boot Path           : /dev/vda3
+ OS Release          : debian 12.10 [x86_64] 
+ Kernel              : 6.1.0-30-amd64
+ Uptime              : 48 days, 15 hours, 27 minutes
+ Current Time Zone   : BST
+ Load                : 0.00 / 0.00 / 0.00
+ VM Type             : KVM
+ NAT Type            : Full Cone
+ Tcp Accelerate      : cubic
+ IPV4 ASN            : AS202602 Greencloud LLC
+ IPV4 Location       : Eindhoven / Noord-Brabant / Netherlands
+ IPV4 Active IPs     : 172/256 (subnet /24)
+ IPV6 ASN            : AS202602 Greencloud LLC
+ IPV6 Location       : Amsterdam / Noord-Holland / Netherlands
+ IPv6 Mask           : /64
+----------------------------CPU-Test--sysbench-Method-----------------------------
+1 Thread(s) Test:   3594.63
+---------------------------Memory-Test--sysbench-Method---------------------------
+Single Seq Write Speed: 24596.17 MB/s(25.79K IOPS, 5s)
+Single Seq Read  Speed: 42786.45 MB/s(44.86K IOPS, 5s)
+------------------------------Disk-Test--fio-Method-------------------------------
+Test Path     Block    Read(IOPS)              Write(IOPS)             Total(IOPS)
+/root         4k       163.44 MB/s(40.9k)      163.88 MB/s(41.0k)      327.32 MB/s(81.8k)      
+/root         64k      2.13 GB/s(33.3k)        2.14 GB/s(33.5k)        4.27 GB/s(66.7k)        
+/root         512k     3.64 GB/s(7112)         3.83 GB/s(7490)         7.48 GB/s(14.6k)        
+/root         1m       4.60 GB/s(4494)         4.91 GB/s(4793)         9.51 GB/s(9287)         
+-----------------------Cross-Border-Streaming-Media-Unlock------------------------
+IPV4:
+===============[ Global ]===============
+Apple                     YES (Region: NLD)
+BingSearch                YES (Region: NL)
+Claude                    YES
+Dazn                      YES (Region: NL)
+Disney+                   YES (Region: NL)
+Gemini                    NO
+GoogleSearch              YES
+Google Play Store         YES (Region: NL)
+IQiYi                     YES (Region: NL)
+Instagram Licensed Audio  YES
+KOCOWA                    YES
+MetaAI                    NO (AbraGeoBlocked)
+Netflix                   YES (Region: US)
+Netflix CDN               NL
+OneTrust                  YES (Region: NL)
+ChatGPT                   YES (Region: NL)
+Paramount+                YES
+Amazon Prime Video        YES (Region: NL)
+Reddit                    YES
+SonyLiv                   YES (Region: NL)
+Sora                      YES (Region: NL)
+Spotify Registration      YES (Region: NL)
+Steam Store               YES (Community Available) (Region: NL)
+TVBAnywhere+              YES (Region: NL)
+TikTok                    YES (Region: NL)
+Viu.com                   YES
+Wikipedia Editability     YES
+YouTube Region            YES (Region: NL)
+YouTube CDN               AMS
+---------------------------------Email-Port-Check---------------------------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔    
+QQ        ✔     ✔     ✔     ✘     ✔     ✘    
+163       ✔     ✔     ✔     ✘     ✔     ✘    
+Sohu      ✔     ✔     ✔     ✘     ✔     ✘    
+Yandex    ✔     ✔     ✔     ✘     ✔     ✘    
+Gmail     ✔     ✔     ✘     ✘     ✘     ✘    
+Outlook   ✔     ✘     ✔     ✘     ✔     ✘    
+Office365 ✔     ✘     ✔     ✘     ✔     ✘    
+Yahoo     ✔     ✔     ✘     ✘     ✘     ✘    
+MailCOM   ✔     ✔     ✔     ✘     ✔     ✘    
+MailRU    ✔     ✔     ✘     ✘     ✔     ✘    
+AOL       ✔     ✔     ✘     ✘     ✘     ✘    
+GMX       ✔     ✘     ✔     ✘     ✔     ✘    
+Sina      ✔     ✔     ✔     ✘     ✔     ✘    
+Apple     ✘     ✘     ✘     ✘     ✘     ✘    
+FastMail  ✘     ✔     ✘     ✘     ✘     ✘    
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘    
+MXRoute   ✔     ✘     ✔     ✘     ✔     ✘    
+Namecrane ✔     ✔     ✔     ✘     ✔     ✘    
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘    
+ZohoMail  ✘     ✔     ✘     ✘     ✘     ✘    
+Inbox_eu  ✔     ✔     ✔     ✘     ✘     ✘    
+Free_fr   ✘     ✔     ✔     ✘     ✔     ✘    
+------------------------------------Speed-Test------------------------------------
+Location        Upload Speed    Download Speed  Latency         PacketLoss      
+Speedtest.net   1975.49 Mbps    8727.91 Mbps    594.863µs       N/A             
+Frankfurt       496.03 Mbps     917.04 Mbps     8.036988ms      N/A             
+LosAngeles      74.80 Mbps      860.81 Mbps     146.492625ms    N/A             
+HongKong        59.16 Mbps      363.61 Mbps     195.645139ms    N/A             
+Singapore       32.06 Mbps      635.99 Mbps     204.977316ms    N/A             
+Tokyo,Japan     39.72 Mbps      277.91 Mbps     257.639707ms    N/A             
+----------------------------------------------------------------------------------
+Cost    Time          : 4 min 31 sec
+Current Time          : Sat Apr 12 10:26:11 BST 2025
+----------------------------------------------------------------------------------
 {{< /spoil_subgroup >}}
 {{< /spoil_group >}}

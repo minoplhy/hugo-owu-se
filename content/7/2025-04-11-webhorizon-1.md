@@ -3,6 +3,8 @@ title = "Webhorizon SG 1C/1G/10G/1T"
 date = 2025-04-11T10:28:41+00:00
 slug = "webhorizon-1"
 
+lastmod = 2025-04-12T08:00:00+00:00
+
 description = "The VPS Benchmark of Webhorizon Ryzen-KVM-1GB in Singapore, SG"
 type = "blog"
 +++
@@ -358,5 +360,121 @@ YABS completed in 23 min 4 sec
 
  - https://www.speedtest.net/result/17601596310.png
  - https://browser.geekbench.com/v4/cpu/18653940
+{{< /spoil_subgroup >}}
+{{< /spoil_group >}}
+
+{{< spoil_group title="goecs">}}
+{{< spoil_subgroup date="2025-04-12" >}}
+-----------------------------VPS Fusion Monster Test------------------------------
+Version: v0.1.29
+Review Channel: https://t.me/vps_reviews
+Go Project: https://github.com/oneclickvirt/ecs
+Shell Project: https://github.com/spiritLHLS/ecs
+-----------------------------System-Basic-Information-----------------------------
+ CPU Model           : AMD Ryzen 9 9900X 12-Core Processor @4391.724 MHz
+ CPU Cores           : 1 Virtual CPU(s)
+ CPU Cache           : L1: 80 KB / L2: 1 MB / L3: 32 MB
+ AES-NI              : ✔️ Enabled
+ VM-x/AMD-V/Hyper-V  : ✔️ Enabled
+ RAM                 : 304.57 MB / 925.83 MB
+ Virtio Balloon      : ✔️ Enabled
+ KSM                 : ❌ Undetected
+ Swap                : 7.89 MB / 1024.00 MB
+ Disk                : 6.35 GB / 9.82 GB
+ Boot Path           : /dev/sda3
+ OS Release          : debian 12.10 [x86_64] 
+ Kernel              : 6.1.0-28-amd64
+ Uptime              : 36 days, 20 hours, 37 minutes
+ Current Time Zone   : BST
+ Load                : 0.00 / 0.00 / 0.00
+ VM Type             : KVM
+ NAT Type            : Full Cone
+ Tcp Accelerate      : cubic
+ IPV4 ASN            : AS149020 WebHorizon Internet Services
+ IPV4 Location       : Singapore / Hessen / Singapore
+ IPV4 Active IPs     : 86/256 (subnet /24) 2992/262144 (prefix /14)
+ IPV6 ASN            : AS149020 WebHorizon Internet Services
+ IPV6 Location       : Singapore / Hessen / Singapore
+ IPv6 Mask           : /128
+----------------------------CPU-Test--sysbench-Method-----------------------------
+1 Thread(s) Test:   6641.58
+---------------------------Memory-Test--sysbench-Method---------------------------
+Single Seq Write Speed: 38226.20 MB/s(40.08K IOPS, 5s)
+Single Seq Read  Speed: 99913.28 MB/s(104.77K IOPS, 5s)
+------------------------------Disk-Test--fio-Method-------------------------------
+Test Path     Block    Read(IOPS)              Write(IOPS)             Total(IOPS)
+/root         4k       492.10 MB/s(123.0k)     493.40 MB/s(123.3k)     985.50 MB/s(246.4k)     
+/root         64k      811.66 MB/s(12.7k)      815.93 MB/s(12.7k)      1.63 GB/s(25.4k)        
+/root         512k     1.07 GB/s(2080)         1.12 GB/s(2190)         2.19 GB/s(4270)         
+/root         1m       1.23 GB/s(1196)         1.31 GB/s(1276)         2.53 GB/s(2472)         
+-----------------------Cross-Border-Streaming-Media-Unlock------------------------
+IPV4:
+===============[ Global ]===============
+Apple                     YES (Region: SGP)
+BingSearch                YES (Region: WW)
+Claude                    YES
+Dazn                      YES (Region: SG)
+Disney+                   YES (Region: SG)
+Gemini                    YES (Region: SGP)
+GoogleSearch              YES
+Google Play Store         YES (Region: SG)
+IQiYi                     YES (Region: SG)
+Instagram Licensed Audio  YES
+KOCOWA                    NO
+MetaAI                    Unknown: get www.meta.ai failed with code: 200
+Netflix                   YES (Region: US)
+Netflix CDN               TW
+OneTrust                  YES (Region: SG)
+ChatGPT                   YES (Region: SG)
+Paramount+                YES
+Amazon Prime Video        YES (Region: SG)
+Reddit                    YES
+SonyLiv                   YES (Region: SG)
+Sora                      YES (Region: SG)
+Spotify Registration      NO
+Steam Store               YES (Community Available) (Region: SG)
+TVBAnywhere+              YES (Region: SG)
+TikTok                    YES (Region: SG)
+Viu.com                   YES
+Wikipedia Editability     YES
+YouTube Region            YES (Region: SG)
+YouTube CDN               LAX
+---------------------------------Email-Port-Check---------------------------------
+Platform  SMTP  SMTPS POP3  POP3S IMAP  IMAPS
+LocalPort ✔     ✔     ✔     ✔     ✔     ✔    
+QQ        ✔     ✔     ✔     ✘     ✔     ✘    
+163       ✔     ✔     ✔     ✘     ✔     ✘    
+Sohu      ✔     ✔     ✔     ✘     ✔     ✘    
+Yandex    ✔     ✔     ✔     ✘     ✔     ✘    
+Gmail     ✔     ✔     ✘     ✘     ✘     ✘    
+Outlook   ✔     ✘     ✔     ✘     ✔     ✘    
+Office365 ✔     ✘     ✔     ✘     ✔     ✘    
+Yahoo     ✔     ✔     ✘     ✘     ✘     ✘    
+MailCOM   ✔     ✔     ✔     ✘     ✔     ✘    
+MailRU    ✔     ✔     ✘     ✘     ✔     ✘    
+AOL       ✔     ✔     ✘     ✘     ✘     ✘    
+GMX       ✔     ✘     ✔     ✘     ✔     ✘    
+Sina      ✔     ✔     ✔     ✘     ✔     ✘    
+Apple     ✘     ✔     ✘     ✘     ✘     ✘    
+FastMail  ✘     ✔     ✘     ✘     ✘     ✘    
+ProtonMail✘     ✘     ✘     ✘     ✘     ✘    
+MXRoute   ✔     ✘     ✔     ✘     ✔     ✘    
+Namecrane ✔     ✔     ✔     ✘     ✔     ✘    
+XYAMail   ✘     ✘     ✘     ✘     ✘     ✘    
+ZohoMail  ✘     ✔     ✘     ✘     ✘     ✘    
+Inbox_eu  ✔     ✔     ✔     ✘     ✘     ✘    
+Free_fr   ✘     ✔     ✔     ✘     ✔     ✘    
+------------------------------------Speed-Test------------------------------------
+Location        Upload Speed    Download Speed  Latency         PacketLoss      
+Speedtest.net   724.96 Mbps     929.64 Mbps     3.152282ms      0.00% (Sent: 402/Dup: 0/Max: 401)
+Singapore       0.05 Mbps       929.44 Mbps     25.077861ms     N/A             
+HongKong        284.15 Mbps     779.56 Mbps     34.146037ms     N/A             
+Tokyo,Japan     180.74 Mbps     612.92 Mbps     91.371218ms     N/A             
+Frankfurt       81.26 Mbps      433.68 Mbps     179.645023ms    N/A             
+LosAngeles      51.65 Mbps      185.10 Mbps     231.618021ms    N/A             
+----------------------------------------------------------------------------------
+Cost    Time          : 4 min 19 sec
+Current Time          : Sat Apr 12 10:29:08 BST 2025
+----------------------------------------------------------------------------------
 {{< /spoil_subgroup >}}
 {{< /spoil_group >}}
