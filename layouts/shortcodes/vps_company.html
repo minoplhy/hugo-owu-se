@@ -1,0 +1,22 @@
+{{- /*
+    For use with 7
+    */}}
+
+{{- /* Get OWNER Arguments. */}}
+{{- $COMPANY := or (.Get "company") "N/a" }}
+{{- $REGISTER_ID := or (.Get "register_id") "N/a" }}
+{{- $COMPANY_STATE := or (.Get "company_state") "N/a" }}
+{{- $COMPANY_COUNTRY := or (.Get "company_country") "N/a" }}
+{{- $WEBSITE := or (.Get "website") "N/a" }}
+
+{{ $owner := slice
+    (dict "type" "Company" "value" $COMPANY)
+    (dict "type" "Entity ID" "value" $REGISTER_ID)
+    (dict "type" "Company Location" "value" (print $COMPANY_STATE ", " $COMPANY_COUNTRY))
+    (dict "type" "Website" "value" (safeHTML (print "<a  target=_blank href='https://" $WEBSITE "'>" $WEBSITE "</a>")))
+}}
+
+<h2>Owner</h2>
+{{ range $owner }}
+    <b>{{ .type }}:</b> <pre>{{ .value |safeHTML }}</pre>
+{{ end }}

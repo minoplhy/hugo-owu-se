@@ -26,12 +26,6 @@ asn="202602"
 asn_name="Greencloud LLC"
 country="NL"
 city="Amsterdam"
-
-company="365 Group LLC / GREENCLOUD LLC"
-register_id="6645389 / 0109492303"
-company_state="Delaware"
-company_country="US / Hanoi, VN"
-website="greencloudvps.com"
 >}}
 
 {{< vps_info

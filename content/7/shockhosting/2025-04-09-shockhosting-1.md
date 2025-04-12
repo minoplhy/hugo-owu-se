@@ -24,12 +24,6 @@ asn="395092"
 asn_name="Shock Hosting LLC"
 country="SG"
 city="Singapore"
-
-company="Shock Hosting LLC"
-register_id="5997884"
-company_state="Delaware"
-company_country="US"
-website="shockhosting.com"
 >}}
 
 {{< vps_info

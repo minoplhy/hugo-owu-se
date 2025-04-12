@@ -8,34 +8,13 @@
 {{- $COUNTRY := or (.Get "country") "N/a" }}
 {{- $CITY := or (.Get "city") "N/a" }}
 
-{{- /* Get OWNER Arguments. */}}
-{{- $COMPANY := or (.Get "company") "N/a" }}
-{{- $REGISTER_ID := or (.Get "register_id") "N/a" }}
-{{- $COMPANY_STATE := or (.Get "company_state") "N/a" }}
-{{- $COMPANY_COUNTRY := or (.Get "company_country") "N/a" }}
-{{- $WEBSITE := or (.Get "website") "N/a" }}
-
-{{- /* Get UPSTREAM Arguments. */}}
-{{- $UPSTREAM := or (.Get "upstream") "N/a" }}
 
 {{ $location := slice
     (dict "type" "ASN" "value" (safeHTML (print "<a  target=_blank href='https://bgp.tools/as/" $ASN "'>AS" $ASN "</a> " $ASN_NAME)))
     (dict "type" "Country" "value" (print $CITY ", " $COUNTRY))
 }}
 
-{{ $owner := slice
-    (dict "type" "Company" "value" $COMPANY)
-    (dict "type" "Entity ID" "value" $REGISTER_ID)
-    (dict "type" "Company Location" "value" (print $COMPANY_STATE ", " $COMPANY_COUNTRY))
-    (dict "type" "Website" "value" (safeHTML (print "<a  target=_blank href='https://" $WEBSITE "'>" $WEBSITE "</a>")))
-}}
-
 <h3>Location</h3>
 {{ range $location }}
     <pre> <b>{{ .type }}:</b> {{ .value | safeHTML }}</pre>
-{{ end }}
-
-<h3>Owner</h3>
-{{ range $owner }}
-    <pre> <b>{{ .type }}:</b> {{ .value |safeHTML }}</pre>
 {{ end }}

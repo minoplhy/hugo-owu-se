@@ -26,12 +26,6 @@ asn="149020"
 asn_name="WebHorizon Internet Services"
 country="SG"
 city="Singapore"
-
-company="WebHorizon IT Broadband Limited / WebHorizon Internet Services"
-register_id="14514455 / ORG-WIS5-AP(<a target=_blank href=https://wq.apnic.net/apnic-bin/whois.pl?searchtext=ORG-WIS5-AP&form_type=advanced>APNIC</a>)"
-company_state="London"
-company_country="UK / Maharashtra, IN"
-website="webhorizon.net"
 >}}
 
 {{< vps_info

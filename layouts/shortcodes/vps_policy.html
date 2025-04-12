@@ -1,0 +1,46 @@
+{{- /*
+    For use with 7
+    */}}
+
+{{- /* Get Policy Arguments. */}}
+{{- $TORRENT := or (.Get "torrent") "N/a" }}
+{{- $SMTP := or (.Get "smtp") "N/a" }}
+{{- $ADULT_CONTENT := or (.Get "adult_content") "N/a" }}
+{{- $TOR := or (.Get "tor") "N/a" }}
+{{- $VPN := or (.Get "vpn") "N/a" }}
+
+{{- $policy := slice
+    (dict "type" "Torrent" "value" $TORRENT)
+    (dict "type" "SMTP(Port 25)" "value" $SMTP)
+    (dict "type" "Adult Content" "value" $ADULT_CONTENT)
+    (dict "type" "Tor Network" "value" $TOR)
+    (dict "type" "VPN" "value" $VPN)
+}}
+
+<h2>Policy</h2>
+<details class="spoiler">
+    <summary>Expand</summary>
+    <div class="spoiler-content">
+    {{- range $policy }}
+        <pre><b>{{ .type }}:</b> {{ .value | safeHTML }}</pre>
+    {{- end }}
+    </div>
+</details>
+
+<h3>Source</h3>
+<details class="spoiler">
+    <summary>Expand</summary>
+    <div class="spoiler-content">
+            {{ range (split (string .Inner) "\n") }}
+                {{ $line := trim . " \t\r\n" }}
+                {{ if ne $line "" }}
+                    {{ $line := replace $line "'" "" }}
+                    {{ $parts := split $line " " }}
+                    {{ $url := index $parts 1 }}
+                    {{ $name := index $parts 0 }}
+                    <pre><a target="_blank" href="{{ $url }}">{{ $name }}</a></pre>
+                {{ end }}
+            {{ end }}
+    </div>
+</details>
+

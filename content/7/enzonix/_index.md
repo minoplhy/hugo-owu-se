@@ -1,0 +1,22 @@
++++
+title = "Enzonix"
++++
+
+{{< vps_company
+company="ENZONIX LLC"
+register_id="202109101521740"
+company_state="Indiana"
+company_country="US"
+website="enzonix.com"
+>}}
+
+{{< vps_policy
+torrent="yes (Legal only)"
+smtp="per request"
+adult_content="yes"
+vpn="yes (no high number of abuse complaints)"
+>}}
+'Terms' 'https://enzonix.com/legal.html'
+'SMTP' 'https://lowendtalk.com/discussion/comment/4387315/#Comment_4387315'
+'Adult_Content' 'https://lowendtalk.com/discussion/comment/4385527/#Comment_4385527'
+{{< /vps_policy>}}
