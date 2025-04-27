@@ -17,30 +17,23 @@
     (dict "type" "VPN" "value" $VPN)
 }}
 
-<h2>Policy</h2>
 <details class="spoiler">
-    <summary>Expand</summary>
+    <summary><h2>Policy</h2></summary>
     <div class="spoiler-content">
-    {{- range $policy }}
-        <pre><b>{{ .type }}:</b> {{ .value | safeHTML }}</pre>
-    {{- end }}
+        <div class="infoblock-list">
+            {{- range $policy }}
+              <div class="infoblock-item">
+                <span class="infoblock-type">{{ .type }}:</span>
+                <span class="infoblock-value">{{ .value | safeHTML }}</span>
+              </div>
+            {{- end }}
+          </div>          
+    
+    {{ if ne .Inner "" }}
+    {{ .Inner | markdownify }}
+    {{ end }}
+  
     </div>
 </details>
 
-<h3>Source</h3>
-<details class="spoiler">
-    <summary>Expand</summary>
-    <div class="spoiler-content">
-            {{ range (split (string .Inner) "\n") }}
-                {{ $line := trim . " \t\r\n" }}
-                {{ if ne $line "" }}
-                    {{ $line := replace $line "'" "" }}
-                    {{ $parts := split $line " " }}
-                    {{ $url := index $parts 1 }}
-                    {{ $name := index $parts 0 }}
-                    <pre><a target="_blank" href="{{ $url }}">{{ $name }}</a></pre>
-                {{ end }}
-            {{ end }}
-    </div>
-</details>
-
+<br>

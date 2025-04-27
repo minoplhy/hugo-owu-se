@@ -1,5 +1,6 @@
 +++
 title = "GreenCloudVPS"
+description = "The main page of provider named Enzonix AKA GREENCLOUD LLC/365 Group LLC"
 +++
 
 {{< vps_company
@@ -15,5 +16,5 @@ torrent="yes (non-copyright-infringing material)"
 smtp="yes (no spam)"
 tor="no"
 >}}
-'TOS' 'https://greencloudvps.com/terms-of-service.php'
+* [Terms of Service](https://greencloudvps.com/terms-of-service.php)
 {{< /vps_policy>}}

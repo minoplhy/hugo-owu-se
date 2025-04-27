@@ -1,5 +1,6 @@
 +++
 title = "Hostiko"
+description = "The main page of provider named Hostiko AKA South Park Networks LLC"
 +++
 
 {{< vps_company
@@ -16,6 +17,6 @@ smtp="yes (no spam)"
 adult_content="no"
 tor="yes (no exit)"
 >}}
-'terms' 'https://hostiko.com.ua/en/terms'
-'tor' 'https://lowendspirit.com/discussion/comment/211102/#Comment_211102'
+* [TOS](https://hostiko.com.ua/en/terms)
+* [TOR](https://lowendspirit.com/discussion/comment/211102/#Comment_211102)
 {{< /vps_policy>}}

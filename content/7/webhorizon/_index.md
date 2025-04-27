@@ -1,5 +1,6 @@
 +++
 title = "Webhorizon"
+description = "The main page of provider named Webhorizon AKA WebHorizon IT Broadband Limited/WebHorizon Internet Services ORG-WIS5-AP (APNIC)"
 +++
 
 {{< vps_company
@@ -17,5 +18,5 @@ tor="yes (no exit)"
 vpn="yes"
 adult_content="no"
 >}}
-'AUP' 'https://webhorizon.net/aup.html'
+* [AUP](https://webhorizon.net/aup.html)
 {{< /vps_policy>}}

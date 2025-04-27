@@ -18,6 +18,11 @@
 <h2>Provider Information</h2>
 
 <h3>Specs</h3>
-{{ range $specs }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $specs }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+</div>

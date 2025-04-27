@@ -15,6 +15,11 @@
 }}
 
 <h3>Location</h3>
-{{ range $location }}
-    <pre> <b>{{ .type }}:</b> {{ .value | safeHTML }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $location }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+</div>

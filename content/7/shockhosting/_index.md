@@ -1,5 +1,6 @@
 +++
 title = "Shockhosting"
+description = "The main page of provider named Shockhosting AKA Shock Hosting LLC"
 +++
 
 {{< vps_company
@@ -14,5 +15,5 @@ website="shockhosting.com"
 smtp="yes (no spam)"
 tor="yes (no exit)"
 >}}
-'AUP' 'https://shockhosting.com/aup'
+* [AUP](https://shockhosting.com/aup)
 {{< /vps_policy>}}

@@ -1,5 +1,6 @@
 +++
 title = "Racknerd"
+description = "The main page of provider named Racknerd AKA RACKNERD LLC"
 +++
 
 {{< vps_company
@@ -13,5 +14,5 @@ website="racknerd.com"
 {{< vps_policy
 smtp="yes (no spam)"
 >}}
-'TOS' 'https://racknerd.com/terms-of-service'
+* [Terms of Service](https://racknerd.com/terms-of-service)
 {{< /vps_policy>}}

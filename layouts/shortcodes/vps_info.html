@@ -38,16 +38,31 @@
 <h2>Server Information</h2>
 
 <h3>CPU</h3>
-{{ range $cpu }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $cpu }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+</div>   
 
 <h3>RAM</h3>
-{{ range $ram }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $ram }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+</div>   
 
 <h3>STORAGE</h3>
-{{ range $storage }}
-    <pre> <b>{{ .type }}:</b> {{ .value }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $storage }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+</div>  

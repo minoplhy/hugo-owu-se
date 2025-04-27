@@ -1,5 +1,6 @@
 +++
 title = "Kuroit"
+description = "The main page of provider named Kuroit AKA KUROIT LIMITED/ORG-KA58-AP(APNIC)"
 +++
 
 {{< vps_company
@@ -15,5 +16,5 @@ smtp="yes (prohibit Mass mail)"
 adult_content="yes (Legal only)"
 tor="yes (no exit)"
 >}}
-'AUP' 'https://www.kuroit.com/acceptable-use-policy/'
+* [Acceptable Usage Policy](https://www.kuroit.com/acceptable-use-policy/)
 {{< /vps_policy>}}

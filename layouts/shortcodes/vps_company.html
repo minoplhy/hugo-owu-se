@@ -17,6 +17,11 @@
 }}
 
 <h2>Owner</h2>
-{{ range $owner }}
-    <b>{{ .type }}:</b> <pre>{{ .value |safeHTML }}</pre>
-{{ end }}
+<div class="infoblock-list">
+    {{- range $owner }}
+      <div class="infoblock-item">
+        <span class="infoblock-type">{{ .type }}:</span>
+        <span class="infoblock-value">{{ .value | safeHTML }}</span>
+      </div>
+    {{- end }}
+  </div>   

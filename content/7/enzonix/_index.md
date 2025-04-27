@@ -1,5 +1,6 @@
 +++
 title = "Enzonix"
+description = "The main page of provider named Enzonix AKA ENZONIX LLC"
 +++
 
 {{< vps_company
@@ -16,7 +17,7 @@ smtp="per request"
 adult_content="yes"
 vpn="yes (no high number of abuse complaints)"
 >}}
-'Terms' 'https://enzonix.com/legal.html'
-'SMTP' 'https://lowendtalk.com/discussion/comment/4387315/#Comment_4387315'
-'Adult_Content' 'https://lowendtalk.com/discussion/comment/4385527/#Comment_4385527'
+* [Terms](https://enzonix.com/legal.html)
+* [STMP](https://lowendtalk.com/discussion/comment/4387315/#Comment_4387315)
+* [Adult Content](https://lowendtalk.com/discussion/comment/4385527/#Comment_4385527)
 {{< /vps_policy>}}

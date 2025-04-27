@@ -7,15 +7,21 @@
 <details class="spoiler">
     <summary>Click to show</summary>
     <div class="spoiler-content">
-        <pre>*WARNING: only incoming upstream is count!* <a target="_blank" href=https://bgp.tools/kb/what-is-a-upstream>see</a></a></pre>
+      <div class="infoblock-list">
+        <div class="spoiler-banner">
+        *WARNING: only incoming upstream is count!* <a target="_blank" href=https://bgp.tools/kb/what-is-a-upstream>see</a>
+        </div>
         {{ range (split (string .Inner) "\n") }}
         {{ $line := trim . " \t\r\n" }}
         {{ if ne $line "" }}
           {{ $asn := index (split $line " ") 0 }}
           {{ $name := trim (replace $line $asn "" 1) " '" }}
           {{ $asnNum := replace $asn "AS" "" }}
-            <pre><a target="_blank" href="https://bgp.tools/as/{{ $asnNum }}">{{ $asn }}</a> '{{ $name }}'</pre>
-        {{ end }}
+          <div class="infoblock-item">
+              <span class="infoblock-value"><a target="_blank" href="https://bgp.tools/as/{{ $asnNum }}">{{ $asn }}</a> '{{ $name }}'</span>
+          </div>
+          {{ end }}
       {{ end }}
+      </div>
     </div>
 </details>
