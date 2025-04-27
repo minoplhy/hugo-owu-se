@@ -4,8 +4,8 @@ description = "The main page of provider named CharityHost.org AKA CHARITYHOST.O
 +++
 
 {{< vps_company
-company="CHARITYHOST.ORG LLC"
-register_id="2023-001293571"
+company="CHARITYHOST.ORG LLC / NEOTECHADMIN LLC(<a target=_blank href=https://whois.arin.net/rest/org/NL-870.html>ARIN</a>|<a target=_blank href=https://whois.arin.net/rest/net/NET-23-128-116-0-1.html>IP</a>)"
+register_id="2023-001293571 / 2017-000761508"
 company_state="Wyoming"
 company_country="US"
 website="charityhost.org"
