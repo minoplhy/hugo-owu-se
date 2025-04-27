@@ -3,9 +3,13 @@ title = "CharityHost.org TX, US 1C/1G/20G/1T"
 date = 2025-04-26T23:39:34+00:00
 slug = "charityhost-1"
 
+lastmod = 2025-04-17T01:00:00+00:00
+
 description = "The VPS Benchmark of CharityHost.org TX, US 1C/1G/20G/1T"
 type = "blog"
 +++
+
+##### Plan -> VPS SSD 1 [Link](https://charityhost.org/account/store/vps-ssd-highmem/vps-ssd-1/)
 
 {{< vps_specs
 cpu_core="1"
