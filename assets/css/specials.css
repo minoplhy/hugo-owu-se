@@ -46,62 +46,77 @@ details.spoiler summary {
     display: inline-flex;
     align-items: center;
     cursor: pointer;
-  }
+}
   
-  details.spoiler summary::-webkit-details-marker {
-    display: none;
-  }
+details.spoiler summary::-webkit-details-marker {
+  display: none;
+}
   
-  details.spoiler summary::after {
-    content: ' \203A';
-    margin-left: 5px;
-  }
+details.spoiler summary::after {
+  content: ' \203A';
+  margin-left: 5px;
+}
   
-  details.spoiler {
-    display: inline-block;
-  }
+details.spoiler {
+  display: inline-block;
+}
 
-  .spoiler-banner{
-    background-color: red;
+.spoiler-banner{
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+  
+.spoiler-subgroup-content {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95rem;
+  overflow-x: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.infoblock-list {
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+  
+.infoblock-item {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+  
+.infoblock-type {
+  font-weight: bold;
+}
+  
+.infoblock-value {
+  margin-left: 0.5rem;
+}
+  
+.generic-banner{
+    background-color: rgb(113, 188, 148);
     color: white;
     padding: 10px;
-    text-align: center;
     margin-bottom: 10px;
     border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .spoiler-subgroup-content {
-    background-color: #1e1e2f;
-    color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 1rem 0;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-size: 0.95rem;
-    overflow-x: auto;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease;
-  }
+}
 
-  .infoblock-list {
-    padding: 1rem;
-    border-radius: 12px;
-    margin: 1rem 0;
-    font-family: 'Fira Code', 'Courier New', monospace;
-    font-size: 0.95rem;
-  }
-  
-  .infoblock-item {
-    margin-bottom: 0.5rem;
-    padding: 0.5rem;
-  }
-  
-  .infoblock-type {
-    font-weight: bold;
-  }
-  
-  .infoblock-value {
-    margin-left: 0.5rem;
-  }
-  
+.dark-mode .generic-banner {
+    background-color: rgb(175, 53, 42);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
