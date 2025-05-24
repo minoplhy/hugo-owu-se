@@ -2,6 +2,9 @@
     For use with 7
     */}}
 
+{{- $NETWORK_MAP := or (.Get "network_map") "" }}
+{{- $NETWORK_RANGE := or (.Get "network_range") "" }}
+
 <h3>Network Upstream</h3>
 
 <details class="spoiler">
@@ -11,6 +14,19 @@
         <div class="spoiler-banner">
         *WARNING: only incoming upstream is count!* <a target="_blank" href=https://bgp.tools/kb/what-is-a-upstream>see</a>
         </div>
+        {{ if ne $NETWORK_MAP "" }}
+        <div>
+        <img src="https://bgp.tools/pathimg/rt-{{ $NETWORK_MAP }}?showrs" alt="Network Map" />
+        <figcaption><center>(Data via bgp.tools)</center></figcaption>
+        <br />
+        {{ end }}
+        {{ if ne $NETWORK_RANGE "" }}
+        <a href="https://bgp.tools/prefix/{{ $NETWORK_RANGE }}" target="_blank" rel="noopener noreferrer">
+          View Network Range
+        </a>
+        </div>
+        <br>
+        {{ end }}
         {{ range (split (string .Inner) "\n") }}
         {{ $line := trim . " \t\r\n" }}
         {{ if ne $line "" }}
