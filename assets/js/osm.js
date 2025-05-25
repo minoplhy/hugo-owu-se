@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const map = L.map("map").setView([lat, lon], 4.5);
 
-let tileStyle = "light_all";
+//let tileStyle = "light_all";
 //if (localStorage.getItem('dark-mode') === 'true') {
 //    tileStyle = "dark_all";
 //}
@@ -18,12 +18,11 @@ const customIcon = L.icon({
   popupAnchor: [0, -30],
 });
 
-L.tileLayer(`https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`, {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-  subdomains: 'abcd',
-  maxZoom: 19
-}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 19,
+  }).addTo(map);
 
   L.marker([lat, lon], {icon: customIcon})
     .addTo(map)
