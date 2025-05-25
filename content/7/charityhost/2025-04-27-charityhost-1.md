@@ -3,7 +3,7 @@ title = "CharityHost.org TX, US 1C/1G/20G/1T"
 date = 2025-04-26T23:39:34+00:00
 slug = "charityhost-1"
 
-lastmod = 2025-04-27T01:00:00+00:00
+lastmod = 2025-05-25T01:00:00+00:00
 
 description = "The VPS Benchmark of CharityHost.org TX, US 1C/1G/20G/1T"
 type = "blog"
@@ -27,6 +27,8 @@ country="US"
 city="Texas"
 >}}
 
+{{< osm location="32.99, -96.97" popup="Texas, US" >}}
+
 {{< vps_info
 cpu="Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz"
 aesni="yes"
@@ -38,7 +40,10 @@ memory_write="4199.54 MiB/sec"
 disk_total="20G"
 >}}
 
-{{< network_upstream >}}
+{{< network_upstream 
+network_map="23.128.116.0_24"
+network_range="23.128.116.0/24"
+>}}
 AS3356 'Lumen (Level 3)'
 AS174 'Cogent Communications'
 {{< /network_upstream >}}

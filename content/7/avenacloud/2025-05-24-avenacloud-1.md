@@ -24,6 +24,8 @@ country="MD"
 city="Chisinau"
 >}}
 
+{{< osm location="47.0308, 28.8432" popup="Chisinau, MD" >}}
+
 {{< vps_info
 cpu="Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz"
 aesni="yes"
