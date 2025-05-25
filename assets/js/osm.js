@@ -11,6 +11,13 @@ let tileStyle = "light_all";
 //    tileStyle = "dark_all";
 //}
 
+const customIcon = L.icon({
+  iconUrl: '/images/leaflet/marker.avif',
+  iconSize: [32, 37],
+  iconAnchor: [16, 37],
+  popupAnchor: [0, -30],
+});
+
 L.tileLayer(`https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`, {
   attribution:
     '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
@@ -18,7 +25,7 @@ L.tileLayer(`https://{s}.basemaps.cartocdn.com/${tileStyle}/{z}/{x}/{y}{r}.png`,
   maxZoom: 19
 }).addTo(map);
 
-  L.marker([lat, lon])
+  L.marker([lat, lon], {icon: customIcon})
     .addTo(map)
     .bindPopup(popup)
     .openPopup();
