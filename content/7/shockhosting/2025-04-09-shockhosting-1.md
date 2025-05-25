@@ -1,11 +1,11 @@
 +++
-title = "Shockhosting SG 1C/2G/30G/2T"
+title = "Shockhosting SG 🇸🇬 1C/2G/30G/2T"
 date = 2025-04-09T21:45:09+00:00
 slug = "shockhosting-1"
 
-lastmod = 2025-04-12T08:00:00+00:00
+lastmod = 2025-05-25T01:00:00+00:00
 
-description = "The VPS Benchmark of Shockhosting SSD-KVM-2GB in Singapore, SG"
+description = "The VPS Benchmark of Shockhosting SSD-KVM-2GB in Singapore, SG 🇸🇬"
 type = "blog"
 +++
 
@@ -26,6 +26,8 @@ country="SG"
 city="Singapore"
 >}}
 
+{{< osm location="1.3402, 103.8867" popup="Singapore, SG 🇸🇬" >}}
+
 {{< vps_info
 cpu="AMD EPYC 9354 32-Core Processor"
 aesni="yes"
@@ -37,7 +39,10 @@ memory_write="6593.68 MiB/sec"
 disk_total="29G"
 >}}
 
-{{< network_upstream >}}
+{{< network_upstream 
+network_map="103.159.64.0_23"
+network_range="103.159.64.0/23"
+>}}
 AS136557 'Host Universal Pty Ltd'
 {{< /network_upstream >}}
 

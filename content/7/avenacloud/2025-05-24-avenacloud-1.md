@@ -1,9 +1,9 @@
 +++
-title = "AvenaCloud MD 1C/1G/10G/unmetered(100mbps)"
+title = "AvenaCloud MD 🇲🇩 1C/1G/10G/unmetered(100mbps)"
 date = 2025-05-24T16:39:34+00:00
 slug = "avenacloud-1"
 
-description = "The VPS Benchmark of AvenaCloud MD 1C/1G/10G/unmetered(100mbps)"
+description = "The VPS Benchmark of AvenaCloud MD 🇲🇩 1C/1G/10G/unmetered(100mbps)"
 type = "blog"
 +++
 
@@ -24,7 +24,7 @@ country="MD"
 city="Chisinau"
 >}}
 
-{{< osm location="47.0308, 28.8432" popup="Chisinau, MD" >}}
+{{< osm location="47.0308, 28.8432" popup="Chisinau, MD 🇲🇩" >}}
 
 {{< vps_info
 cpu="Intel(R) Xeon(R) CPU E5-2690 v4 @ 2.60GHz"

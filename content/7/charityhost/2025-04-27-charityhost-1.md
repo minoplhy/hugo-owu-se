@@ -1,11 +1,11 @@
 +++
-title = "CharityHost.org TX, US 1C/1G/20G/1T"
+title = "CharityHost.org TX, US 🇺🇸 1C/1G/20G/1T"
 date = 2025-04-26T23:39:34+00:00
 slug = "charityhost-1"
 
 lastmod = 2025-05-25T01:00:00+00:00
 
-description = "The VPS Benchmark of CharityHost.org TX, US 1C/1G/20G/1T"
+description = "The VPS Benchmark of CharityHost.org TX, US 🇺🇸 1C/1G/20G/1T"
 type = "blog"
 +++
 
@@ -27,7 +27,7 @@ country="US"
 city="Texas"
 >}}
 
-{{< osm location="32.99, -96.97" popup="Texas, US" >}}
+{{< osm location="32.99, -96.97" popup="Texas, US 🇺🇸" >}}
 
 {{< vps_info
 cpu="Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz"

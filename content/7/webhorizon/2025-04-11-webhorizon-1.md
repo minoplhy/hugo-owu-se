@@ -1,11 +1,11 @@
 +++
-title = "Webhorizon SG 1C/1G/10G/1T"
+title = "Webhorizon SG 🇸🇬 1C/1G/10G/1T"
 date = 2025-04-11T10:28:41+00:00
 slug = "webhorizon-1"
 
-lastmod = 2025-04-12T08:00:00+00:00
+lastmod = 2025-05-25T01:00:00+00:00
 
-description = "The VPS Benchmark of Webhorizon Ryzen-KVM-1GB in Singapore, SG"
+description = "The VPS Benchmark of Webhorizon Ryzen-KVM-1GB in Singapore, SG 🇸🇬"
 type = "blog"
 +++
 
@@ -28,6 +28,8 @@ country="SG"
 city="Singapore"
 >}}
 
+{{< osm location="1.3402, 103.8867" popup="Singapore, SG 🇸🇬" >}}
+
 {{< vps_info
 cpu="AMD Ryzen 9 9900X 12-Core Processor"
 aesni="yes"
@@ -39,7 +41,10 @@ memory_write="9345.72 MiB/sec"
 disk_total="10G"
 >}}
 
-{{< network_upstream >}}
+{{< network_upstream 
+network_map="160.191.77.0_24"
+network_range="160.191.77.0/24"
+>}}
 AS137409 'GSL Networks Pty LTD'
 {{< /network_upstream >}}
 

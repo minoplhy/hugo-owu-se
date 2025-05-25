@@ -1,11 +1,11 @@
 +++
-title = "GreenCloudVPS DE 1C/2G/25G/3T"
+title = "GreenCloudVPS DE 🇩🇪 1C/2G/25G/3T"
 date = 2025-04-11T06:52:30+00:00
 slug = "greencloudvps-2"
 
-lastmod = 2025-04-12T08:00:00+00:00
+lastmod = 2025-05-25T01:00:00+00:00
 
-description = "The VPS Benchmark of GreenCloudVPS EPYCDEVF-1 in Frankfurt, DE"
+description = "The VPS Benchmark of GreenCloudVPS EPYCDEVF-1 in Frankfurt, DE 🇩🇪"
 type = "blog"
 +++
 
@@ -28,6 +28,8 @@ country="DE"
 city="Frankfurt"
 >}}
 
+{{< osm location="50.1127, 8.6758" popup="Frankfurt, DE 🇩🇪" >}}
+
 {{< vps_info
 cpu="AMD EPYC 7763 64-Core Processor"
 aesni="yes"
@@ -39,7 +41,10 @@ memory_write="5484.73 MiB/sec"
 disk_total="25G"
 >}}
 
-{{< network_upstream >}}
+{{< network_upstream 
+network_map="109.94.170.0_24"
+network_range="109.94.170.0/24"
+>}}
 AS5511 'Orange S.A.'
 AS1299 'Arelion (fka. Telia Carrier)'
 AS6830 'Liberty Global B.V.'

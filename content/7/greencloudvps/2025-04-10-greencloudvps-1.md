@@ -1,11 +1,11 @@
 +++
-title = "GreenCloudVPS NL 1C/2G/25G/3T"
+title = "GreenCloudVPS NL 🇳🇱 1C/2G/25G/3T"
 date = 2025-04-09T12:52:30+00:00
 slug = "greencloudvps-1"
 
-lastmod = 2025-04-12T08:00:00+00:00
+lastmod = 2025-05-25T01:00:00+00:00
 
-description = "The VPS Benchmark of GreenCloudVPS EPYCNL-1 in AMS, NL"
+description = "The VPS Benchmark of GreenCloudVPS EPYCNL-1 in AMS, NL 🇳🇱"
 type = "blog"
 +++
 
@@ -28,6 +28,8 @@ country="NL"
 city="Amsterdam"
 >}}
 
+{{< osm location="52.423, 4.900" popup="AMS, NL 🇳🇱" >}}
+
 {{< vps_info
 cpu="AMD EPYC 7763 64-Core Processor"
 aesni="yes"
@@ -39,7 +41,10 @@ memory_write="5597.14 MiB/sec"
 disk_total="25G"
 >}}
 
-{{< network_upstream >}}
+{{< network_upstream 
+network_map="185.214.10.0_24"
+network_range="185.214.10.0/24"
+>}}
 AS24875 'NovoServe B.V.'
 {{< /network_upstream >}}
 
