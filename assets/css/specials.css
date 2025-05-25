@@ -120,3 +120,7 @@ details.spoiler {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+#map {
+  height: 400px;
+}
