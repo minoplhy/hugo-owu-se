@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="{{ $leafletCSS.RelPermalink }}" integrity="{{ $leafletCSS.Data.Integrity }}" crossorigin="" />
 
 {{ $leafletJS := resources.Get "js/leaflet/leaflet.js" | resources.Minify | resources.Fingerprint }}
-<script src="{{ $leafletJS.RelPermalink }}" integrity="{{ $leafletJS.Data.Integrity }}" crossorigin=""></script>
+<script src="{{ $leafletJS.RelPermalink }}" integrity="{{ $leafletJS.Data.Integrity }}" crossorigin="" defer></script>
 
 {{ $location := split (.Get "location") "," }}
 {{ $lat := trim (index $location 0) " " }}
