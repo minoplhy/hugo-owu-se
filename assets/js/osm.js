@@ -40,23 +40,43 @@ document.addEventListener("DOMContentLoaded", function () {
     for (const { lat, lon, popup, icon } of spreadMarkers) {
       if (typeof lat !== "number" || typeof lon !== "number") continue;
 
-      const markerIcon = L.icon({
-        iconUrl: icon || markerIconDefault.options.iconUrl,
+      // Always use a placeholder icon initially
+      const placeholderIcon = markerIconDefault || L.icon({
+        iconUrl: '/images/leaflet/marker.avif',
         iconSize: [32, 37],
         iconAnchor: [16, 37],
         popupAnchor: [0, -30],
       });
 
-      const marker = L.marker([lat, lon], { icon: markerIcon }).addTo(markersLayerGroup);
+    const marker = L.marker([lat, lon], { icon: placeholderIcon }).addTo(markersLayerGroup);
 
-      if (popup) marker.bindPopup(popup);
-      bounds.extend([lat, lon]);
+    if (popup) marker.bindPopup(popup);
+    bounds.extend([lat, lon]);
+
+    // If a custom icon is defined and different, load it asynchronously
+    if (icon && icon !== placeholderIcon.options.iconUrl) {
+      const img = new Image();
+      img.onload = () => {
+        const updatedIcon = L.icon({
+          iconUrl: icon,
+          iconSize: [32, 37],
+          iconAnchor: [16, 37],
+          popupAnchor: [0, -30],
+        });
+        marker.setIcon(updatedIcon);
+      };
+      img.onerror = () => {
+        console.warn("Failed to load marker icon:", icon);
+      };
+      img.src = icon;
     }
+  }
 
+  // Handle zoom/popup logic
   if (bounds.isValid()) {
     if (globalMarkerBuffer.length === 1) {
       const [lat, lon] = [globalMarkerBuffer[0].lat, globalMarkerBuffer[0].lon];
-      map.setView([lat, lon], 3.9);
+      map.setView([lat, lon], 3.9); // custom zoom for solo marker
     } else {
       map.fitBounds(bounds, {
         padding: [30, 30],
@@ -64,14 +84,15 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
-  
+
+  // Auto-open popup if there's only one marker
   if (globalMarkerBuffer.length === 1 && globalMarkerBuffer[0].popup) {
     const marker = markersLayerGroup.getLayers()[0];
     if (marker && marker.openPopup) {
       marker.openPopup();
     }
   }
-  }
+}
 
   function spreadOverlappingMarkers(markerData, dx = 1.4) {
     const map = new Map();
