@@ -8,7 +8,7 @@ This is my collection for [YABS](https://yabs.sh), [Network-Speed](https://nws.s
 
 All my entries are customer experience and will always be
 
-![Welcome](/images/7/welcome.avif)
+{{< osm marker_file="/7/marker.json" >}}
 
 {{< rawhtml >}}
 <hr>

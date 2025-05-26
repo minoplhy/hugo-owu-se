@@ -1,0 +1,12 @@
+[
+    {"import": "/7/markers/hostiko.json"},
+    {"import": "/7/markers/racknerd.json"},
+    {"import": "/7/markers/shockhosting.json"},
+    {"import": "/7/markers/enzonix.json"},
+    {"import": "/7/markers/kuroit.json"},
+    {"import": "/7/markers/greencloudvps.json"},
+    {"import": "/7/markers/webhorizon.json"},
+    {"import": "/7/markers/charityhost.json"},
+    {"import": "/7/markers/dataideas.json"},
+    {"import": "/7/markers/avenacloud.json"}
+]

@@ -11,6 +11,8 @@ company_country="IN / London, UK"
 website="kuroit.com"
 >}}
 
+{{< osm marker_file="/7/markers/kuroit.json" >}}
+
 {{< vps_policy
 smtp="yes (prohibit Mass mail)"
 adult_content="yes (Legal only)"

@@ -11,6 +11,8 @@ company_country="UA"
 website="hostiko.com.ua"
 >}}
 
+{{< osm marker_file="/7/markers/hostiko.json" >}}
+
 {{< vps_policy
 torrent="yes"
 smtp="yes (no spam)"

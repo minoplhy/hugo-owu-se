@@ -7,12 +7,36 @@
 {{ $leafletJS := resources.Get "js/leaflet/leaflet.js" | resources.Minify | resources.Fingerprint }}
 <script src="{{ $leafletJS.RelPermalink }}" integrity="{{ $leafletJS.Data.Integrity }}" crossorigin="" defer></script>
 
+{{ $zoom := .Get "zoom" | default "4.5" }}
+
 {{ $location := split (.Get "location") "," }}
-{{ $lat := trim (index $location 0) " " }}
-{{ $lon := trim (index $location 1) " " }}
+
+{{ $lat := "" }}
+{{ $lon := "" }}
+{{ if eq (len $location) 2 }}
+  {{ $lat = trim (index $location 0) " " }}
+  {{ $lon = trim (index $location 1) " " }}
+{{ end }}
+
+{{ $popup := .Get "popup" | default "" }}
+
+{{ $markerFile := .Get "marker_file" }}
+
+{{ $markers := .Get "markers" }}
+
+{{ $inlineMarkersJSON := "" }}
+{{ if not $markerFile }}
+  {{ if $markers }}
+    {{ $inlineMarkersJSON = $markers }}
+  {{ else if and (ne $lat "") (ne $lon "") }}
+    {{/* Single marker from location and popup params */}}
+    {{ $inlineMarkersJSON = printf `[{"lat": %s, "lon": %s, "popup": %q}]` $lat $lon $popup }}
+  {{ else }}
+    {{ $inlineMarkersJSON = "[]" }}
+  {{ end }}
+{{ end }}
 
 <div id="map"
-     data-lat="{{ $lat }}"
-     data-lon="{{ $lon }}"
-     data-popup="{{ .Get "popup" | default "" }}">
+  {{ if $markerFile }}marker_file="{{ $markerFile }}"{{ else }}data-markers='{{ $inlineMarkersJSON | safeJS }}'{{ end }}
+  data-zoom="{{ $zoom }}">
 </div>

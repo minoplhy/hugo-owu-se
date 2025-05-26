@@ -11,6 +11,8 @@ company_country="UK / Maharashtra, IN"
 website="webhorizon.net"
 >}}
 
+{{< osm marker_file="/7/markers/webhorizon.json" >}}
+
 {{< vps_policy
 torrent="yes (legal only 20Mbps)"
 smtp="yes (no spam)"

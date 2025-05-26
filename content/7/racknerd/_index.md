@@ -11,6 +11,8 @@ company_country="US"
 website="racknerd.com"
 >}}
 
+{{< osm marker_file="/7/markers/racknerd.json" >}}
+
 {{< vps_policy
 smtp="yes (no spam)"
 >}}

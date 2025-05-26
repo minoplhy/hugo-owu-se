@@ -11,6 +11,8 @@ company_country="US / Hanoi, VN"
 website="greencloudvps.com"
 >}}
 
+{{< osm marker_file="/7/markers/greencloudvps.json" >}}
+
 {{< vps_policy
 torrent="yes (non-copyright-infringing material)"
 smtp="yes (no spam)"

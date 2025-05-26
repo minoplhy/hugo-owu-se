@@ -11,6 +11,8 @@ company_country="US"
 website="shockhosting.com"
 >}}
 
+{{< osm marker_file="/7/markers/shockhosting.json" >}}
+
 {{< vps_policy
 smtp="yes (no spam)"
 tor="yes (no exit)"

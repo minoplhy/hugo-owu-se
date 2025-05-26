@@ -11,6 +11,8 @@ company_country="US"
 website="enzonix.com"
 >}}
 
+{{< osm marker_file="/7/markers/enzonix.json" >}}
+
 {{< vps_policy
 torrent="yes (Legal only)"
 smtp="per request"

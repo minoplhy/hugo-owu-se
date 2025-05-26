@@ -11,6 +11,8 @@ company_country="US"
 website="charityhost.org"
 >}}
 
+{{< osm marker_file="/7/markers/charityhost.json" >}}
+
 {{< vps_policy 
 smtp="one-time 'retainer' $25.00, no spam"
 adult_content="no"

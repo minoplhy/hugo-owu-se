@@ -11,6 +11,8 @@ company_country="MD"
 website="avenacloud.com"
 >}}
 
+{{< osm marker_file="/7/markers/avenacloud.json" >}}
+
 {{< vps_policy>}}
 * [Terms](https://avenacloud.com/terms-of-service/)
 {{< /vps_policy>}}
