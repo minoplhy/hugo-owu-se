@@ -64,6 +64,13 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     }
   }
+  
+  if (globalMarkerBuffer.length === 1 && globalMarkerBuffer[0].popup) {
+    const marker = markersLayerGroup.getLayers()[0];
+    if (marker && marker.openPopup) {
+      marker.openPopup();
+    }
+  }
   }
 
   function spreadOverlappingMarkers(markerData, dx = 1.4) {
