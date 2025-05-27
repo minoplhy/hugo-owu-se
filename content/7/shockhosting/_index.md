@@ -1,7 +1,9 @@
 +++
-title = "Shockhosting"
-description = "The main page of provider named Shockhosting AKA Shock Hosting LLC"
+title = "ShockHosting"
+description = "The main page of provider named ShockHosting AKA Shock Hosting LLC"
 +++
+
+# ShockHosting
 
 {{< vps_company
 company="Shock Hosting LLC"

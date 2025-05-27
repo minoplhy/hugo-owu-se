@@ -1,7 +1,9 @@
 +++
-title = "Webhorizon"
+title = "WebHorizon"
 description = "The main page of provider named Webhorizon AKA WebHorizon IT Broadband Limited/WebHorizon Internet Services ORG-WIS5-AP (APNIC)"
 +++
+
+# WebHorizon
 
 {{< vps_company
 company="WebHorizon IT Broadband Limited / WebHorizon Internet Services"

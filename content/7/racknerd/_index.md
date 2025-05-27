@@ -1,7 +1,9 @@
 +++
-title = "Racknerd"
-description = "The main page of provider named Racknerd AKA RACKNERD LLC"
+title = "RackNerd"
+description = "The main page of provider named RackNerd AKA RACKNERD LLC"
 +++
+
+# RackNerd
 
 {{< vps_company
 company="RACKNERD LLC"

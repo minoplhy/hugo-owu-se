@@ -7,6 +7,8 @@ description = "The main page of provider named CharityHost.org AKA CHARITYHOST.O
 **NOTICE: Data Ideas is closing it's door by June 2025....[Read More](https://lowendtalk.com/discussion/205196/service-termination-notice-data-ideas-llc-action-required-by-june-1-2025)**
 {{< /generic_banner >}}
 
+# Data Ideas
+
 {{< vps_company
 company="DATA IDEAS LLC / CYBER PLANET LLC"
 register_id="<details><summary>DATA IDEAS LLC</summary><b>32072472874</b>(TX Taxpayer Number), <b>0803465668</b>(TX File Number)</details><details><summary>CYBER PLANET LLC</summary><b>32094592832</b>(TX Taxpayer Number), <b>0805503319</b>(Texas File Number)</details>"

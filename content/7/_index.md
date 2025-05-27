@@ -2,14 +2,19 @@
 title = "7"
 date = 2024-03-09T08:43:04+00:00
 menu = "main"
+
+description = "Benchmark Collection from your *Probably* Favorite provider"
+
 +++
 
-This is my collection for [YABS](https://yabs.sh), [Network-Speed](https://nws.sh) and more from all servers that i own or currently used.
+# 7: Benchmark Collection™
 
-All my entries are customer experience and will always be
+7 of the Ben Mark Collection. never snitch. Always CR
+
+### Benchmark Map
 
 {{< osm marker_file="/7/marker.json" >}}
 
 {{< rawhtml >}}
-<hr>
+<br>
 {{< /rawhtml >}}

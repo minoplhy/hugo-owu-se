@@ -3,6 +3,8 @@ title = "AvenaCloud"
 description = "The main page of provider named AvenaCloud AKA SOCIETATEA COMERCIALĂ INFOTECH-GRUP S.R.L."
 +++
 
+# AvenaCloud
+
 {{< vps_company
 company="SOCIETATEA COMERCIALĂ INFOTECH-GRUP S.R.L."
 register_id="1004603001872"
