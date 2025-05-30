@@ -8,5 +8,6 @@
     {"import": "/7/markers/webhorizon.json"},
     {"import": "/7/markers/charityhost.json"},
     {"import": "/7/markers/dataideas.json"},
-    {"import": "/7/markers/avenacloud.json"}
+    {"import": "/7/markers/avenacloud.json"},
+    {"import": "/7/markers/digirdp.json"}
 ]
