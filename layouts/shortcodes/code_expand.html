@@ -1,0 +1,7 @@
+<div class="spoiler-subgroup-content">
+  {{ $content := .Inner }}
+  
+  {{ $highlightedContent := (replaceRE "<hugo_red_highlight>(.*?)</hugo_red_highlight>" "<span id='hugo_red_highlight'>$1</span>" $content) }}
+  
+  <pre>{{ $highlightedContent | safeHTML }}</pre>
+</div>
