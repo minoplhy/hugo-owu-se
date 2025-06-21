@@ -1,6 +1,6 @@
 +++
 title = "That Time When I Lost Access to My Server Entirely"
-date = "2025-06-20T15:39:13+00:00"
+date = "2025-06-20T12:00:00"
 slug = "no-network-monitor-no-problem"
 
 #
@@ -11,7 +11,7 @@ slug = "no-network-monitor-no-problem"
 #
 # description is optional
 #
-description = "Have you ever lost Network Access on your server? and you have no monitor too?? ok, this article might help yous"
+description = "Have you ever lost Network Access on your server? and you have no monitor too?? ok, this article might help you!"
 images = ["/images/blog/no-network-monitor-no-problem/Untitled.jpg"]
 
 tags = ["blog","network","rant",]

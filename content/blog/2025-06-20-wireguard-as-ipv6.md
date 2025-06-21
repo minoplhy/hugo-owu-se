@@ -1,6 +1,6 @@
 +++
 title = "WireGuard as IPv6 Tunnel with 1:1 Port Forwarding"
-date = "2025-06-20T15:39:13+00:00"
+date = "2025-06-20T15:00:00"
 slug = "wireguard-as-ipv6-tunnel"
 
 #
@@ -11,7 +11,7 @@ slug = "wireguard-as-ipv6-tunnel"
 #
 # description is optional
 #
-description = ""
+description = "This blog will guide you on the basics on WireGuard and how to made a Port Forwarding either 1:1 or specific port possible"
 images = ["/images/blog/wireguard-as-ipv6-tunnel/graph1.png"]
 
 tags = ["blog","network","wireguard",]
