@@ -124,3 +124,7 @@ details.spoiler {
 #map {
   height: 400px;
 }
+
+#hugo_red_highlight {
+  background-color: rgb(138, 21, 21);
+}
